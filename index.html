@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TestYourSelf - Be your own tester</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <h1>Test<span>Your</span>Self</h1>
+                <button id="add" class="btn">Add Word</button>
+                <button id="start" class="btn">Start Test</button>
+                <button id="rem" class="btn">Remember</button>
+                <button id="show" class="btn">Show Words</button>
+                
+                <div class="center">
+                    <button id="clean" class="btn">Clean Words</button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main">
+            <div class="container">
+                <div id="addModal">
+                    <div id="inner">
+                        <form action="index.html" method="POST">
+                            <h2>Add your word</h2>
+                            
+                            <button><span>&times;</span></button>
+                            
+                            <label for="addWord">English Word:</label>
+                            <input type="text" id="addWord" name="user_word">
+                            
+                            <label for="transWord">Translated Word:</label>
+                            <input type="text" id="transWord" class="br" name="user_word_trans">
+                            
+                            <input type="submit" id="sub_btn" class="br" value="Add">
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="test">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/addModal.js"></script>
+        <script src="js/test.js"></script>
+        <script src="js/remember.js"></script>
+    </body>
+</html>

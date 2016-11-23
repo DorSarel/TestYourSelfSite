@@ -1,0 +1,264 @@
+/* ===== General ===== */
+
+@import 'https://fonts.googleapis.com/css?family=Aclonica';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(245, 245 ,245);
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Aclonica", sans-serif;
+}
+
+p {
+    font-size: 1.175em;
+    text-align: left;
+}
+
+/* ===== Header ===== */
+
+header {
+    border-bottom: 2px solid rgba(230, 230, 230, .6)
+}
+
+header h1 {
+    font-size: 3.5em;
+    letter-spacing: 4px;
+    margin-bottom: 45px;
+}
+
+
+header h1 > span {
+    font-weight: normal;
+    color: #FFF;
+    text-shadow: 3px 2px 6px black;
+}
+
+.btn {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 15px 20px;
+    font-size: 1.125em;
+    color: black;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    
+    transition: background-color .5s, box-shadow .5s .2s, color .5s .1s;
+}
+
+.btn:hover {
+    background-color: rgba(144, 212, 254, .6);
+    box-shadow: 0px 2px 5px black;
+   /* border: 1px solid #FFF;*/
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.center {
+    margin-top: 1.25em;
+}
+
+.center button {
+    transition-property: background-color, color, transform;
+    transition-duration: .5s;
+    transition-delay: 0s;
+}
+
+.center button:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* ===== Main ===== */
+
+/* ===== addModal ===== */
+
+#addModal {
+    margin-bottom: 50px;
+    background: rgba(0 , 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding-top: 10%;
+}
+
+#addModal form {
+    background: rgb(245, 245 ,245);
+    padding: 1em;
+    position: relative;
+}
+
+.main h2 {
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin-bottom: 30px;
+    padding: 10px 8px;
+    border: 3px solid rgba(230, 230, 230, .6);
+}
+
+#sub_btn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 25px;
+    background-color: #369;
+    color: white;
+}
+
+label,
+#sub_btn {
+    font-size: 1.125em;
+}
+
+.br {
+    border-radius: 8px;
+}
+
+form button {
+    position: absolute;
+    top: 5%;
+    right:2%;
+    font-size: 2em;
+    border: none;
+    background: none;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 5px 25px rgba(0 , 0, 0 , .7);
+}
+
+
+/* ===== test ===== */
+
+div#test {
+    width: 60%;
+    margin: auto;
+}
+
+#test h2,
+#test h3 {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#test h2 {
+    font-size: 2em;
+}
+
+#options {
+    list-style: none;
+    padding-left: 0;
+}
+
+#options li {
+    padding: 15px;
+    width: 50%;
+    float: left;
+    color: black;
+    font-size: 1.5em;
+    
+    transition: background-color .4s;
+}
+
+#options li:hover {
+    background-color: rgba(235, 235, 235, .6);
+    cursor: pointer;
+}
+
+.b-border {
+    border-bottom: 3px solid rgba(0,0,0,.7);
+}
+
+.r-border {
+    border-right: 3px solid rgba(0,0,0,.7);
+}
+
+table#result,
+tr,
+th,
+td {
+    border: 3px solid rgb(235, 235, 235);
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    padding: 1em;
+}
+
+th {
+    padding: .3em;
+}
+
+
+/* ===== Remember ===== */
+
+.card {
+    font-size: 1.25em;
+    padding: 20px;
+    margin: 8px;
+    
+    height: 200px;
+    width: 180px;
+    
+    background-color: rgb(235, 235, 235);
+    /*border: 2px solid rgba(0,0,0,.4);*/
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+    
+    transition: background-color .4s, box-shadow .4s;
+}
+
+.card:hover {
+    background-color: rgba(235, 235, 235, .6);
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .7);
+}
+
+.card:nth-child(5n + 1) {
+    clear: both;
+}
+
+.selected {
+    box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .7);
+}
+
+
+/* ===== /Main ===== */
